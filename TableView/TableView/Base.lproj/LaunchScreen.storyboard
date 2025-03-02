@@ -16,16 +16,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCK-hC-AUO">
-                                <rect key="frame" x="197" y="322" width="42" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="K9B-bX-ZGR">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Zones" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCK-hC-AUO" userLabel="LaunchScreenLabel">
+                                <rect key="frame" x="105.00000000000001" y="405.66666666666669" width="183.33333333333337" height="41"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                <color key="textColor" systemColor="systemPurpleColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="K9B-bX-ZGR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="1SX-QJ-A1l"/>
+                            <constraint firstItem="K9B-bX-ZGR" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="BRo-1g-sj6"/>
+                            <constraint firstItem="mCK-hC-AUO" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="E4u-Rv-RvV"/>
+                            <constraint firstItem="K9B-bX-ZGR" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="mPT-sa-jj9"/>
+                            <constraint firstItem="K9B-bX-ZGR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="o4k-2c-YDg"/>
+                            <constraint firstItem="mCK-hC-AUO" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="saH-OY-Dnk"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -34,8 +44,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="LaunchScreen" width="300" height="297.66665649414062"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
